@@ -16,9 +16,9 @@ public interface Employee {
 	//employeeName() will return employee name
 	public String employeeName();
 
-	public String departments();
 
-	public int employeeDob();
+
+	public int employeeAge();
 	
 	//assignDepartment() will assign employee to departments
     public void assignDepartment();

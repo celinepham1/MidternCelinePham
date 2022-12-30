@@ -14,6 +14,9 @@ public class FortuneEmployee {
 	 *
 	 **/
 	public static void main(String[] args) {
+	EmployeeInfo obj = new EmployeeInfo("David Beckham",234);
+		obj.employeeAge();
+		obj.calculateSalary();
 
 		
 

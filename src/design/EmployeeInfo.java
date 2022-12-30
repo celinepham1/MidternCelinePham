@@ -2,7 +2,7 @@ package design;
 
 import java.util.Scanner;
 
-public class EmployeeInfo {
+public class EmployeeInfo implements Employee {
 
 
  /*This class can be implemented from Employee interface then add additional methods in EmployeeInfo class.
@@ -17,8 +17,8 @@ public class EmployeeInfo {
  * Use Exception Handling.
  *
  */
- 		int monthlySalary, salary;
-
+ 	static int monthlySalary, yearlySalary;
+	String name ;
 	/*
 	 * declare few static and final fields and some non-static fields
 	 */
@@ -39,7 +39,8 @@ public class EmployeeInfo {
 		
 	}
     public EmployeeInfo(String name, int employeeId){
-		
+		System.out.println("Employee name: "+ name);
+		System.out.println("EmployeeID: "+ employeeId);
 	}
 
 	public EmployeeInfo() {
@@ -83,7 +84,41 @@ public class EmployeeInfo {
 		return total;
 	}
 
+	@Override
+	public int employeeId() {
+		return 0;
+	}
 
+	@Override
+	public String employeeName() {
+		return null;
+	}
+
+
+	@Override
+	public int employeeAge() {
+		int age = 45;
+		System.out.println("Employee Age: " + age);
+		return age;
+	}
+
+	@Override
+	public void assignDepartment() {
+		System.out.println();
+	}
+
+	@Override
+	public int calculateSalary() {
+		monthlySalary = 7000;
+		yearlySalary=monthlySalary*12;
+		System.out.println("Calculated Salary:" + yearlySalary);
+		return yearlySalary;
+	}
+
+	@Override
+	public void benefitLayout() {
+
+	}
 
 
 	private static class DateConversion {
