@@ -8,8 +8,18 @@ public class Pattern {
 		 *use for loop
 		 *
 		 */
-		
-
+		for(int i = 100; i>=90; i-=1){
+			System.out.println(i);
+		}
+		for(int j = 88; j>=70;j-=2){
+			System.out.println(j);
+		}
+		for(int l = 67; l>=40; l-=3){
+			System.out.println(l);
+		}
+		for(int m = 36; m>=0; m-=4){
+			System.out.println(m);
+		}
 
 	}
 }
