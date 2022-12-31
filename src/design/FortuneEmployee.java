@@ -18,6 +18,7 @@ public class FortuneEmployee {
 		obj.employeeAge();
 		obj.calculateSalary();
 
+
 		
 
 

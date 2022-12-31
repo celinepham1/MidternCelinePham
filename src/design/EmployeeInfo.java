@@ -1,5 +1,6 @@
 package design;
 
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class EmployeeInfo implements Employee {
@@ -18,7 +19,8 @@ public class EmployeeInfo implements Employee {
  *
  */
  	static int monthlySalary, yearlySalary;
-	String name ;
+	String name;
+	String department;
 	/*
 	 * declare few static and final fields and some non-static fields
 	 */
@@ -55,9 +57,39 @@ public class EmployeeInfo implements Employee {
 	 * So you probably need to send 2 arguments.
 	 * 
 	 */
-	public static int calculateEmployeeBonus(int numberOfYearsWithCompany){
-		int total=0;
-		return total;
+	public static int calculateEmployeeBonus(int numberOfYearsWithCompany) {
+		int salary;
+		int answer;
+		double addedBonus;
+		int total = 0;
+		Scanner sc = new Scanner(System.in);
+		do {
+
+			System.out.println("Choose performance level:");
+			System.out.println("10- Best Performance");
+			System.out.println("8- Average Performance");
+			System.out.println("4- Below average Performance");
+			answer = sc.nextInt();
+			return total;
+		}while(answer !=10 && answer !=8 && answer !=6){
+			System.out.println("Pick only 10,8,4");
+		}
+		if(answer ==10){
+			System.out.println("Enter salary: ");
+			salary = sc.nextInt();
+			addedBonus = salary*.10;
+			System.out.println("Bonus is:");
+		}else if (answer==8){
+			System.out.println("Enter salary: ");
+			salary = sc.nextInt();
+			addedBonus = salary*.08;
+			System.out.println("Bonus is:");
+		}else{
+			System.out.println("Enter salary: ");
+			salary = sc.nextInt();
+			addedBonus = salary*.04;
+			System.out.println("Bonus is:");
+		}
 	}
 	
 	/*
