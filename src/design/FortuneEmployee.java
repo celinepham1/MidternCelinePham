@@ -17,6 +17,10 @@ public class FortuneEmployee {
 	EmployeeInfo obj = new EmployeeInfo("David Beckham",234);
 		obj.employeeAge();
 		obj.calculateSalary();
+		obj.assignDepartment();
+		obj.setPhoneno(2849334);
+		System.out.println(obj.getPhoneno());
+
 
 
 		

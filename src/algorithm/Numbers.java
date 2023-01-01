@@ -39,7 +39,7 @@ public class Numbers {
 
 		//By following above, Continue for rest of the Sorting Algorithm....
 
-
+		//had difficult time understanding algorithm
 
 
 

@@ -1,6 +1,5 @@
 package design;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class EmployeeInfo implements Employee {
@@ -21,12 +20,18 @@ public class EmployeeInfo implements Employee {
  	static int monthlySalary, yearlySalary;
 	String name;
 	String department;
+	private int phoneno;
 	/*
 	 * declare few static and final fields and some non-static fields
 	 */
 
 	static String companyName;
-	
+	public int getPhoneno(){
+		return phoneno;
+	}
+	public void setPhoneno(int phoneno){
+		this.phoneno = phoneno;
+	}
 	/*
 	 * You must implement the logic for below 2 methods and 
 	 * following 2 methods are prototype as well for other methods need to be design,
@@ -58,7 +63,9 @@ public class EmployeeInfo implements Employee {
 	 * 
 	 */
 	public static int calculateEmployeeBonus(int numberOfYearsWithCompany) {
-		int salary;
+		int total = 0;
+		return total;
+		/*int salary;
 		int answer;
 		double addedBonus;
 		int total = 0;
@@ -71,7 +78,7 @@ public class EmployeeInfo implements Employee {
 			System.out.println("4- Below average Performance");
 			answer = sc.nextInt();
 			return total;
-		}while(answer !=10 && answer !=8 && answer !=6){
+		}while (answer != 10 && answer != 8 && answer != 6){
 			System.out.println("Pick only 10,8,4");
 		}
 		if(answer ==10){
@@ -90,8 +97,9 @@ public class EmployeeInfo implements Employee {
 			addedBonus = salary*.04;
 			System.out.println("Bonus is:");
 		}
+		while(answer==1);*/
 	}
-	
+
 	/*
 	 * This methods should calculate Employee Pension based on salary and numbers of years with the company.
 	 * Then it will return the total pension. So you need to implement the logic.
@@ -105,8 +113,12 @@ public class EmployeeInfo implements Employee {
 		String joiningDate = sc.nextLine();
 		System.out.println("Please enter today's date in format (example: August,2017): ");
 		String todaysDate = sc.nextLine();
+		//
         String convertedJoiningDate = DateConversion.convertDate(joiningDate);
+
         String convertedTodaysDate = DateConversion.convertDate(todaysDate);
+
+
 
         //implement numbers of year from above two dates
 		//Calculate pension
@@ -136,6 +148,7 @@ public class EmployeeInfo implements Employee {
 
 	@Override
 	public void assignDepartment() {
+
 		System.out.println();
 	}
 
